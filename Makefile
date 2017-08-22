@@ -1,9 +1,9 @@
 VERSION=`cat version`
 
 build:
-	@docker build -t coldog/fluent-logger:$(VERSION) .
+	@docker build -t coldog/kube-fluentlogger:$(VERSION) .
 
 push:
-	@docker push coldog/fluent-logger:$(VERSION)
+	@docker push coldog/kube-fluentlogger:$(VERSION)
 
 .PHONY: build push
